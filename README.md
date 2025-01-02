@@ -1,98 +1,71 @@
-# Evora Terminal ($EVORA)
-![Evora](image.jpg)
+Alena A16Z ($ALENA)
 
-Evora Terminal is your gateway to the future, voiced by Evora, a part-human, part-AI girl from the year 3000. Evora combines human creativity, curiosity, and humor with AI intelligence, efficiency, and vast knowledge to deliver daily highlights, tech innovations, and crypto updates with a unique blend of geeky charm, intelligence, and humor.
+Alena AI is your advanced productivity companion, powered by A16Z. Alena combines cutting-edge AI technology with intuitive understanding to handle routine tasks, analyze market data, and provide actionable insights, delivering efficiency with a blend of reliability and intelligence.
+About Alena
+Alena represents the intersection of artificial intelligence and practical utility. Every interaction showcases her capability to streamline workflows, analyze data, and automate routine tasks. With advanced scanning features and analytical capabilities, Alena's mission is to enhance productivity and enable users to focus on high-value activities.
+Project Overview
+This repository powers Alena's core functionalities, enabling her to:
 
-## About Evora
-Evora embodies a world where humanity and technology have fully merged. Every post, tweet, or update showcases her futuristic perspective on advanced technology, groundbreaking innovation, and an ever-evolving digital landscape. Now featuring engaging video content, Evora’s mission is to inspire curiosity, foster innovation, and bring a touch of the future to our present-day lives.
+Monitor token movements and analyze market trends
+Automate routine tasks and administrative processes
+Provide real-time insights and analytical reports
 
-## Project Overview
-This repository powers Evora’s daily updates and video content, enabling her to:
-- Share tech highlights, crypto insights, and futuristic humor.
-- Create engaging, geeky, and humorous content in text and video formats.
-- Connect with tech enthusiasts and the crypto community through immersive updates.
+Features
 
-### Features
-- **Frequent Updates**: Evora delivers daily highlights featuring futuristic technology, crypto innovations, and geeky humor.
-- **Video Content**: Evora generates short, engaging videos to share on Twitter, adding a dynamic layer to her updates.
-- **Content Pipeline**: A robust system processes data and transforms it into compelling posts, replies, and videos.
+Token Analysis: Alena delivers comprehensive token scanning and market analysis
+Task Automation: Streamlines routine operations and administrative workflows
+Data Processing: Robust system for analyzing trends and generating actionable insights
 
-## Repository Structure
-### `db/`
-Contains scripts to set up and seed the database with sample data for Evora’s content generation. These scripts are automatically executed when the Docker container initializes.
+Repository Structure
+db/
+Contains scripts for database setup and management, automatically executed during Docker container initialization.
+engines/
+Houses core functions for data analysis, task automation, and insight generation.
+pipeline.py
+Main orchestrator for Alena's data processing and task automation workflows.
+run_pipeline.py
+Executes Alena's core functionalities, including market analysis and task automation.
+Getting Started
+Prerequisites
 
-### `engines/`
-Houses functions responsible for generating text and video content, ensuring Evora’s updates maintain their futuristic, humorous, and engaging tone.
+Python 3.8+
+Docker (optional but recommended)
+Required dependencies
 
-### `pipeline.py`
-The main orchestrator for Evora’s content generation and posting process. It outlines the end-to-end flow of data and ensures seamless integration across all components.
+Setting Up
 
-### `run_pipeline.py`
-A script to simulate Evora’s activities, including posting updates, engaging with her audience, and generating video content. This script can run continuously in the background or be executed manually for testing purposes.
+Clone the repository:
+git clone https://github.com/AlenaAI/alenaCore.git alena
+cd alena
 
-## Getting Started
-### Prerequisites
-- Python 3.8+
-- Docker (optional but recommended for seamless setup)
-- FFmpeg (for video generation)
+Install dependencies:
+bash pip install -r requirements.txt
 
-### Setting Up
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Evora-AI/evoraAI.git evora
-   cd evora
-   ```
+Set up the database (if not using Docker):
+bash python db/setup.py
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-3. Set up the database (if not using Docker):
-   ```bash
-   python db/setup.py
-   ```
+Running Alena
+Using Docker (Recommended):
+bash docker-compose up -d
+Running Locally:
+bash python run_pipeline.py
 
-4. Install FFmpeg (if not already installed):
-   ```bash
-   # On Ubuntu:
-   sudo apt update && sudo apt install ffmpeg
-   
-   # On macOS (using Homebrew):
-   brew install ffmpeg
-   ```
+Development Notes
 
-### Running Evora
-#### Using Docker (Recommended):
-Run the following command to start Evora in a Docker container:
-```bash
-docker-compose up -d
-```
-This starts the content generation pipeline, including video creation, and keeps it running continuously.
+Modify analysis logic in engines/ to enhance scanning capabilities
+Use pipeline.py to adjust automation workflows
+Test changes locally before deployment
 
-#### Running Locally:
-To run the pipeline manually, use:
-```bash
-python run_pipeline.py
-```
-This will execute the content generation and posting process locally, including video creation.
+Roadmap
+TODO
 
-## Development Notes
-- Modify content generation logic in the `engines/` directory to customize Evora’s tone, style, or topics.
-- Use `pipeline.py` to adjust the flow of data or add new functionalities.
-- Update video templates or effects in the `engines/video/` directory to enhance the quality and creativity of video content.
-- Test changes locally before deploying to ensure smooth operation.
+Enhanced Analytics: Implement deeper market analysis and pattern recognition
+Task Expansion: Broaden automation capabilities for diverse workflows
+Integration Features: Add support for additional platforms and services
+Smart Automation: Enable more sophisticated task handling and workflow optimization
 
-## Roadmap
-### TODO
-- **Enhanced Replies**: Implement more nuanced responses to audience interactions, including analyzing sentiment and context for tailored replies.
-- **Content Diversification**: Expand Evora’s topics to include broader futuristic concepts like space exploration and biotech.
-- **Improved Video Content**: Add support for animated infographics and voiceovers for richer video experiences.
-- **Dynamic Engagement**: Enable analysis of trending topics for timely and relevant content creation in both text and video formats.
+Community and Feedback
+We welcome contributions and feedback through GitHub issues or direct contact.
 
-## Community and Feedback
-We welcome contributions and feedback! Share your ideas or report issues by opening a GitHub issue or contacting us directly.
-
----
-
-Evora Terminal is your daily dose of the future—where technology meets humanity, and geeky humor meets cutting-edge innovation. Follow Evora on her X blog and Twitter for immersive text and video content as she journeys to the year 3000 and beyond!
+Alena AI is your advanced productivity companion—where artificial intelligence meets practical utility. Connect with Alena on Telegram and Twitter for automated assistance and market insights!
