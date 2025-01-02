@@ -1,4 +1,6 @@
 Alena A16Z ($ALENA)
+![image](https://github.com/user-attachments/assets/62395bae-58bf-4e49-984e-e37a0d1bee86)
+
 
 Alena AI is your advanced productivity companion, powered by A16Z. Alena combines cutting-edge AI technology with intuitive understanding to handle routine tasks, analyze market data, and provide actionable insights, delivering efficiency with a blend of reliability and intelligence.
 About Alena
